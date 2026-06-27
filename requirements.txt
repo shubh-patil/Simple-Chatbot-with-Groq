@@ -1,0 +1,15 @@
+langchain
+ipykernel
+python-dotenv
+langchain_community
+pypdf
+beautifulsoup4
+langchain_openAI
+chromadb
+langchain-ollama
+sentence-transformers
+langchain_huggingface
+faiss-cpu
+langchain-groq
+ipywidgets
+streamlit
