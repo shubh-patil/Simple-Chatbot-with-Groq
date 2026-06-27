@@ -1,13 +1,11 @@
 import os
 import streamlit as st
-from dotenv import load_dotenv
 
 from langchain_groq import ChatGroq
 from langchain_core.messages import HumanMessage, SystemMessage
 
-load_dotenv()
 
-groq_api_key = os.getenv("GROQ_API_KEY")
+ggroq_api_key = st.secrets["GROQ_API_KEY"]
 
 st.title("🏋️ Fitness Query Resolver")
 
