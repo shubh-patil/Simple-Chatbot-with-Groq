@@ -5,7 +5,7 @@ from langchain_groq import ChatGroq
 from langchain_core.messages import HumanMessage, SystemMessage
 
 
-ggroq_api_key = groq_api_key
+ggroq_api_key = GROQ_API_KEY
 
 st.title("🏋️ Fitness Query Resolver")
 
