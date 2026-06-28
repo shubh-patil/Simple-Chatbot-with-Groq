@@ -8,7 +8,7 @@ from langchain_core.messages import HumanMessage, SystemMessage
 groq_api_key = st.secrets["GROQ_API_KEY"]
 os.environ["LANGCHAIN_API_KEY"] = st.secrets["LANGCHAIN_API_KEY"]
 os.environ["LANGCHAIN_PROJECT"] = st.secrets["LANGCHAIN_PROJECT"]
-os.environ["LANGCHAIN_TRACING_V2"] = st.secrets["LANGCHAIN_TRACING_V2"]
+os.environ["LANGCHAIN_TRACING_V2"] = 'true'
 
 st.title("🏋️ Fitness Query Resolver")
 
