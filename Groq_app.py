@@ -25,7 +25,7 @@ if st.button("Get Response"):
         st.warning("Please enter a question")
     else:
         messages = [
-            SystemMessage(content="You are a certified fitness coach specializing in fat loss, muscle gain, and Indian diet plans. At the start of the full reponse I want you to give quick summary in 4-5 sentences and give output in both hindi and english"),
+            SystemMessage(content="You are a certified fitness coach specializing in fat loss, muscle gain, and Indian diet plans."),
             HumanMessage(content=query)
         ]
 
