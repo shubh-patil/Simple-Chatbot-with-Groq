@@ -31,10 +31,4 @@ if st.button("Get Response"):
 
         
 
-        response = ""
-
-        for chunk in model.stream(messages):
-            response += chunk.content
-
-        st.write(response)
-
+        st.write_stream(chunk.content for chunk in model.stream(messages))
