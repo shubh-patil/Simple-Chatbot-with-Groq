@@ -29,6 +29,7 @@ if st.button("Get Response"):
             HumanMessage(content=query)
         ]
 
-        response = model.invoke(messages)
+        
 
-        st.write(response.content)
+        st.write( for chunk in model.stream(messages):
+                print(chunk, end = "", flush = True)
